@@ -1,8 +1,8 @@
 // const score = 400
 // console.log(score);
 
-const balance = new Number(100)
-console.log(balance);
+// const balance = new Number(100)
+// console.log(balance);
 
 // console.log(balance.toString());
 // console.log(balance.toString().length);
@@ -39,10 +39,10 @@ console.log(balance);
 
 // Maths random function by max and min value 
 
-// const min = 1 
-// const max = 6
+const min = 1 
+const max = 6
 
 // To avoid zeo from floor i use ceil 
-// console.log(Math.ceil((Math.random() * ((max - min) + 1))));
+console.log(Math.ceil((Math.random() * ((max - min) + 1))));
 
-// console.log(Math.floor((Math.random() * (max - min + 1) + min)));
+console.log(Math.floor((Math.random() * (max - min + 1) + min)));
