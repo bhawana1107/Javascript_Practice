@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+<body>
+    <h4>Hey Guys!</h4>
+    <div id="myself">My Name is <span id="name">Bhawana</span></div>
+    <div class="career">I am a <span>Developer</span></div>
+    <div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, autem.</div>
+    <div class="career">My skills are <span>HTML , CSS , JAVASCRIPT , TAILWIND CSS , BOOTSTRAP</span></div>
+
+    <script>
+        const element = document.getElementById("name");
+        const ele = element.onclick = changecolor;
+        const elem = element.ondblclick = removecolor;
+        function changecolor (){
+            element.style= "color:red;background-color:black;font-weight:800;";
+        }
+        function removecolor (){
+            element.style= "color:black;background-color:white;font-weight:800;";
+        }
+        
+    </script>
+</body>
+</html>

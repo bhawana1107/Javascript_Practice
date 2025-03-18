@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <h4>Hey Guys!</h4>
+    <div id="myself">My Name is <span>Bhawana</span></div>
+    <div class="career">I am a <span>Developer</span></div>
+    <div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, autem.</div>
+    <div class="career">My skills are <span>HTML , CSS , JAVASCRIPT , TAILWIND CSS , BOOTSTRAP</span></div>
+
+
+    <script>
+        // By Tag Name 
+        console.log(document.getElementsByTagName("h4")[0].innerHTML);
+        console.log(document.querySelector("h4").innerHTML);
+        // By Id
+        console.log(document.getElementById("myself").innerHTML);
+        console.log(document.querySelector("#myself").innerHTML);
+        // By Class
+        console.log(document.getElementsByClassName("career")[1].innerText);
+        console.log(document.querySelector(".block").innerHTML);        
+        // Query Selector All
+        console.log(document.querySelectorAll(".career")[0].innerText);
+
+    </script>
+</body>
+</html>

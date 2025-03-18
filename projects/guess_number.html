@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess a Number</title>
+</head>
+
+<body>
+  <h1 style="color:red;text-align:center;">You are Winner!</h1>
+  <script>
+    let number = 40;
+    let guess = 0;
+
+    do {
+      guess = parseInt(prompt("Guess a Number"));
+      if (guess === number) {
+        console.log(alert("you are Winner"));
+
+        die();
+      } else {
+        guess = parseInt(prompt("Guess a Number"));
+      }
+    } while (guess != number);
+
+  </script>
+</body>
+
+</html>
