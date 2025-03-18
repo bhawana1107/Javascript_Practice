@@ -8,21 +8,45 @@
 <body>
     <h4>Hey Guys!</h4>
     <div id="myself">My Name is <span id="name">Bhawana</span></div>
-    <div class="career">I am a <span>Developer</span></div>
+    <div class="career">I am a <span id="profile">Developer</span></div>
     <div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, autem.</div>
     <div class="career">My skills are <span>HTML , CSS , JAVASCRIPT , TAILWIND CSS , BOOTSTRAP</span></div>
 
     <script>
-        const element = document.getElementById("name");
-        const ele = element.onclick = changecolor;
-        const elem = element.ondblclick = removecolor;
-        function changecolor (){
-            element.style= "color:red;background-color:black;font-weight:800;";
-        }
-        function removecolor (){
-            element.style= "color:black;background-color:white;font-weight:800;";
-        }
+        const element = document.getElementById("profile");
+        // const ele = element.onclick = changecolor;
+        // const elem = element.ondblclick = removecolor;
+        // function changecolor (){
+        //     element.style= "color:red;background-color:black;font-weight:800;";
+        // }
+        // function removecolor (){
+        //     element.style= "color:black;background-color:white;font-weight:800;";
+        // }
         
+    //    console.log(element.addEventListener("click", changeText))
+    //    function changeText (){
+    //         element.innerText = "coder";
+    //         element.style = "color:blue;font-weight:700;font-family:Georgia;";
+    //     }
+    // console.log(element.innerHTML);
+    //     console.log(element.innerHTML.length);
+        const ele = element.innerHTML;
+        const len  = element.innerHTML.length;
+        
+        function result(){
+        for(let i=0 ;i < len ; i++) {
+            setTimeout(() => {
+            element.innerHTML += ele[i];
+        },i*300);
+        };
+        }
+//         function result(index = 0) {
+//     if (index < len) {
+//         element.innerHTML += ele[index]; // Append one character at a time
+//         setTimeout(() => result(index + 1), 200); // Delay of 200ms per character
+//     }
+// }
+        result();
     </script>
 </body>
 </html>
