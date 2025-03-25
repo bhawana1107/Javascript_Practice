@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,54 @@
     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="mood_box">
-        <!-- <h4>Mood</h4> -->
-      
-        <div class="mood_show">
-            <div class="box submit-btn">
-
-            </div>
-          
-            <div class="submit-btn">submit</div>
-        
-        </div>
+        <div class="box submit-btn"></div>
         <div class="mood_img">
-            <li class="mood-icon">😊</li>
-            <li class="mood-icon">😎</li>
-            <li class="mood-icon">😍</li>
-            <li class="mood-icon">😢</li>
-          </div>
+            <li class="mood-icon"><img src="all.png"></li>
+            <li class="mood-icon"><img
+                    src="https://png.pngtree.com/png-clipart/20250103/original/pngtree-like-emoji-thumbs-up-face-png-image_18956094.png">
+            </li>
+            <li class="mood-icon"><img
+                    src="https://png.pngtree.com/png-vector/20240731/ourmid/pngtree-sad-emoji-png-image_13316932.png">
+            </li>
+            <li class="mood-icon"><img
+                    src="https://png.pngtree.com/png-vector/20241229/ourmid/pngtree-sad-smiley-3d-emoticon-emoji-face-that-is-on-transparent-background-png-image_14874562.png">
+            </li>
+        </div>
+    </div>
+    <style>
+        .detail{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .time{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:18px;
+        }
+        .timeline img{
+            width:30px;
+            height:30px;
 
-          <div class="history-btn">History</div>
+        }
+        </style>
+    <div class="detail">
+        <h4>History</h4>
+        <div class="time">
+            <div>Day</div>
+            <div>Month</div>
+            <div>Year</div>
+        </div>
+        <div class="timeline">
+            <img src="https://cdn3.iconfinder.com/data/icons/social-media-outline-13/24/history_activity_timeline_social_media-512.png" alt="">
+        </div>
     </div>
     <!-- SCRIPT -->
     <script src="script.js"></script>
 </body>
+
 </html>
