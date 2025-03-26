@@ -13,16 +13,17 @@
     <h4 class="heading">MOOD TRACKER</h4>
     <!-- MOOD SECTION -->
     <div class="mood_box">
-        <div class="box submit-btn"></div>
+        <div class="box submit-btn" id = "show">
+        </div>
         <div class="mood_img">
-            <li class="mood-icon"><img src="all.png"></li>
-            <li class="mood-icon"><img
+            <li class="mood-icon" id="mast"><img src="all.png"></li>
+            <li class="mood-icon" id="happy"><img
                     src="https://png.pngtree.com/png-clipart/20250103/original/pngtree-like-emoji-thumbs-up-face-png-image_18956094.png">
             </li>
-            <li class="mood-icon"><img
+            <li class="mood-icon" id="sad"><img
                     src="https://png.pngtree.com/png-vector/20240731/ourmid/pngtree-sad-emoji-png-image_13316932.png">
             </li>
-            <li class="mood-icon"><img
+            <li class="mood-icon" id="neutral"><img
                     src="https://png.pngtree.com/png-vector/20241229/ourmid/pngtree-sad-smiley-3d-emoticon-emoji-face-that-is-on-transparent-background-png-image_14874562.png">
             </li>
         </div>
@@ -32,7 +33,7 @@
     <div class="detail record">
         <h4>History</h4>
         <div class="state">
-            <div class="time">Day</div>
+            <div class="time" id="day">Day</div>
             <div class="time">Week</div>
             <div class="time">Month</div>
         </div>
