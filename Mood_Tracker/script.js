@@ -20,7 +20,7 @@ val.forEach(element => {
         console.log(arr);
         document.getElementById("day").addEventListener("click",function(){
             document.getElementById("day").innerHTML = arr;
-           
+            displayArray();
         })
     })
 });
