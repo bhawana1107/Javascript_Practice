@@ -1,0 +1,20 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+.container{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+   margin: auto;
+   border: 2px solid black;
+}
