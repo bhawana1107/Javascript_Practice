@@ -12,10 +12,14 @@
 
 let val = document.querySelectorAll(".mood-icon");
 let arr = [];
+let selected = "day" ;
 val.forEach(element => {
     element.addEventListener("click",function(){
        let result =  document.getElementById("show").innerHTML = element.innerHTML ;
        
+       if(selected == "day"){
+        arr.push(result);
+       }
         arr.push(result);
         console.log(arr);
         document.getElementById("day").addEventListener("click",function(){
