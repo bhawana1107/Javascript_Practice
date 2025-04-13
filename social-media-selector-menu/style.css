@@ -1,0 +1,42 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, purple 20%, orange 80%);
+}
+
+.selector{
+    padding: 12px 12px;  
+    width: 300px;
+    margin: auto;
+    background: lightgrey;
+    opacity: 0.3;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+}
+
+.selector option {
+    padding: 12px 12px;
+    /* border: 2px solid grey; */
+    width: 300px;
+    margin: auto;
+    background: lightgrey;
+    opacity: 0.3;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+}
