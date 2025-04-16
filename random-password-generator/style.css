@@ -32,8 +32,7 @@ h2 {
     border: solid 2px black;
     padding: 10px;
     border-radius: 10px;
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -43,11 +42,16 @@ h2 {
     background-color: transparent;
     outline: none;
     font-size: 24px;
+    cursor: text;
 }
 
 .input-container i {
     cursor: pointer;
     opacity: 0.3;
+}
+
+#icon:hover {
+    opacity: 0.7;
 }
 
 .btn {
@@ -59,4 +63,23 @@ h2 {
     margin: 10px 0;
     font-size: 20px;
     cursor: pointer;
+}
+
+#password-display {
+    position: fixed;
+    bottom: 20px;
+    right: -300px;
+    background-color: lightgreen;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+#password-display.active {
+    right: 20px;
+    /* slide in to visible area */
 }
