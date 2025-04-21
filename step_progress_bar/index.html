@@ -10,27 +10,31 @@
 <body>
     <div class="container">
         <div class="progress-container">
-            <hr class="progress-bar-back">
-            <hr class="progress-bar-front">
+            <hr class="progress-bar-show">
+            <hr class="progress-bar-run">
             <div class="step checked">
                 <i class="fa-solid fa-check"></i>
                 <small>Start</small>
             </div>
             <div class="step">
-                <i class="fa-solid fa-xmark"></i>
+                <i class=" icon fa-solid fa-xmark"></i>
+                <small class="text">Step 1</small>
             </div>
             <div class="step">
-                <i class="fa-solid fa-xmark"></i>
+                <i class="icon fa-solid fa-xmark"></i>
+                <small class="text">Step 2</small>
             </div>
             <div class="step">
-                <i class="fa-solid fa-xmark"></i>
+                <i class="icon fa-solid fa-xmark"></i>
+                <small class="text">Step 3</small>
             </div>
             <div class="step">
-                <i class="fa-solid fa-xmark"></i>
+                <i class="icon fa-solid fa-xmark"></i>
+                <small class="text">Final</small>
             </div>
         </div>
-        <button id="prev" class="btn" disabled><i class="fa-solid fa-arrow-left"></i></button>
-        <button id="next" class="btn" onclick="handleClick(this)"><i class="fa-solid fa-arrow-right"></i></button>
+        <button id="prev" class="btn" onclick="handlePrev(this)" disabled><i class="fa-solid fa-arrow-left"></i></button>
+        <button id="next" class="btn" onclick="handleNext(this)"><i class="fa-solid fa-arrow-right"></i></button>
     </div>
    
     <script src="script.js"></script>
